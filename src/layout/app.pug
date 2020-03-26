@@ -1,0 +1,43 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(content='IE=edge,chrome=1' http-equiv='X-UA-Compatible')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  title Project
+  meta(name='keywords' content='')
+  meta(name='description' content='')
+  link(rel='shortcut icon' href="${require('images/favicon/favicon.ico')}" type='image/x-icon')
+  link(rel='apple-touch-icon' href="${require('images/favicon/apple-touch-icon.png')}" type='image/png')
+  link(rel='stylesheet' href='css/vendors.css?' + hash)
+  link(rel='stylesheet' href='css/app.css?' + hash)
+  //- link(rel="stylesheet", href="swiper/css/swiper.min.css")
+body
+  include ../blocks/header-menu/header-menu
+  
+  .wrapper
+    include header/header
+    include about/about
+    include choose/choose
+    include reviews/reviews
+    include pricing__table/pricing__table
+    include blog/blog
+    include call-today/call-today
+
+    
+    block content
+    include footer/footer
+  script(src='js/vendors.js?' + hash)
+  script(src='js/app.js?' + hash)
+
+
+
+//- .header
+//- .about
+//- .meet
+//- .choose
+//- .reviews
+//- .carousel
+//- .pricing-table
+//- .blog
+//- .call-today
+//- .footer
